@@ -1,0 +1,71 @@
+/* 自定义样式 */
+
+/* 优化文章阅读体验 */
+.vp-doc {
+  /* 文章最大宽度 */
+  --vp-doc-max-width: 780px;
+}
+
+/* 优化代码块样式 */
+.vp-doc div[class*='language-'] {
+  border-radius: 8px;
+  margin: 16px 0;
+}
+
+/* 优化引用块样式 */
+.vp-doc blockquote {
+  border-left: 4px solid var(--vp-c-brand-1);
+  padding-left: 16px;
+  margin: 16px 0;
+  font-style: italic;
+  color: var(--vp-c-text-2);
+}
+
+/* 优化表格样式 */
+.vp-doc table {
+  display: block;
+  overflow-x: auto;
+  margin: 16px 0;
+}
+
+/* 优化链接样式 */
+.vp-doc a {
+  font-weight: 500;
+  transition: color 0.25s;
+}
+
+.vp-doc a:hover {
+  text-decoration: underline;
+}
+
+/* 优化图片样式 */
+.vp-doc img {
+  border-radius: 8px;
+  margin: 20px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* 深色模式优化 */
+.dark .vp-doc img {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* 移动端优化 */
+@media (max-width: 768px) {
+  .vp-doc {
+    padding: 24px;
+  }
+}
+
+/* 平滑滚动 */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 优化首页 Hero 区域 */
+.VPHero .name {
+  background: linear-gradient(120deg, #bd34fe 30%, #41d1ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}

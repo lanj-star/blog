@@ -1,0 +1,12 @@
+# robots.txt for https://lanj-star.github.io/blog/
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://lanj-star.github.io/blog/sitemap.xml
+
+# 禁止访问的路径
+Disallow: /node_modules/
+Disallow: /.vitepress/
+Disallow: /.git/
