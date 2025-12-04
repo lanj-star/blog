@@ -11,6 +11,9 @@ export default defineConfig({
   // 如果是 username.github.io 则不需要设置
   base: '/blog/',
   
+  // 忽略死链接检查（针对 localhost 等开发链接）
+  ignoreDeadLinks: true,
+  
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
