@@ -33,7 +33,7 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/yourusername/blog' }
+      { icon: 'github', link: 'https://github.com/lanj-star/blog' }
     ],
 
     footer: {
