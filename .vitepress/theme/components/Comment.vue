@@ -18,9 +18,9 @@ const commentRef = ref<HTMLElement>()
 // Giscus 配置
 const GISCUS_CONFIG = {
   repo: 'lanj-star/blog',  // 你的 GitHub 仓库
-  repoId: 'YOUR_REPO_ID',  // 需要在 giscus.app 获取
-  category: 'Announcements',
-  categoryId: 'YOUR_CATEGORY_ID',  // 需要在 giscus.app 获取
+  repoId: 'R_kgDOQisXEQ',  // 需要在 giscus.app 获取
+  category: 'General',
+  categoryId: 'DIC_kwDOQisXEc4CzZ6W',  // 需要在 giscus.app 获取
   mapping: 'pathname',
   strict: '0',
   reactionsEnabled: '1',
