@@ -1,0 +1,21 @@
+{
+  "name": "my-tech-blog",
+  "version": "1.0.0",
+  "description": "个人技术博客 - 基于 VitePress",
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview",
+    "sync": "node sync-articles.js",
+    "sync:github": "node sync-from-github.js",
+    "publish": "node publish-to-platforms.js"
+  },
+  "keywords": ["blog", "vitepress", "vue"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "vitepress": "^1.0.0",
+    "vue": "^3.3.0"
+  }
+}
