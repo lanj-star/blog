@@ -7,16 +7,22 @@
     "dev": "vitepress dev",
     "build": "vitepress build",
     "preview": "vitepress preview",
-    "sync": "node sync-articles.js",
-    "sync:github": "node sync-from-github.js",
-    "publish": "node publish-to-platforms.js"
+    "pub": "node scripts/publish.js",
+    "pub:import": "node scripts/import-note.js",
+    "pub:multi": "node scripts/publish-to-platforms.js"
   },
-  "keywords": ["blog", "vitepress", "vue"],
+  "keywords": [
+    "blog",
+    "vitepress",
+    "vue"
+  ],
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "chrome-launcher": "^1.2.1",
+    "feed": "^4.2.2",
+    "puppeteer-core": "^24.36.1",
     "vitepress": "^1.0.0",
-    "vue": "^3.3.0",
-    "feed": "^4.2.2"
+    "vue": "^3.3.0"
   }
 }

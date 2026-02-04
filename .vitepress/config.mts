@@ -70,18 +70,92 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '首页', link: '/' },
-      { text: '博客', link: '/blog/' },
-      { text: '关于', link: '/about' }
+      { text: '基础', link: '/blog/fundamentals/' },
+      { text: '语言', link: '/blog/languages/' },
+      { text: '架构', link: '/blog/system-design/' },
+      { text: '工程化', link: '/blog/engineering/' },
+      { text: 'AI', link: '/blog/ai/' },
+      {
+        text: '更多',
+        items: [
+          { text: '学习资源', link: '/blog/resources/' },
+          { text: '工作流', link: '/blog/workflows/' },
+          { text: '关于', link: '/about' }
+        ]
+      }
     ],
 
     sidebar: {
-      '/blog/': [
+      '/blog/fundamentals/': [
         {
-          text: '最新文章',
+          text: '计算机基础',
           items: [
-            { text: 'VitePress 博客搭建指南', link: '/blog/vitepress-guide' },
-            { text: 'JavaScript 异步编程详解', link: '/blog/js-async' },
-            { text: 'Vue 3 组合式 API 实践', link: '/blog/vue3-composition-api' }
+            { text: '算法与数据结构', link: '/blog/fundamentals/algorithms/' },
+            { text: '计算机网络', link: '/blog/fundamentals/network/' },
+            { text: '数据库理论', link: '/blog/fundamentals/database/' }
+          ]
+        }
+      ],
+      '/blog/languages/': [
+        {
+          text: 'JavaScript / TypeScript',
+          items: [
+            { text: 'JavaScript 异步编程详解', link: '/blog/languages/js-ts/js-async' },
+            { text: 'Vue 3 组合式 API 实践', link: '/blog/languages/js-ts/vue3-composition-api' }
+          ]
+        },
+        {
+          text: 'Golang',
+          items: []
+        },
+        {
+          text: 'Rust',
+          items: []
+        }
+      ],
+      '/blog/system-design/': [
+        {
+          text: '系统设计',
+          items: [
+            { text: '设计模式', link: '/blog/system-design/patterns/' },
+            { text: '分布式系统', link: '/blog/system-design/distributed/' }
+          ]
+        }
+      ],
+      '/blog/engineering/': [
+        {
+          text: '开发工具',
+          items: [
+            { text: 'VitePress 博客搭建指南', link: '/blog/engineering/tools/vitepress-guide' }
+          ]
+        },
+        {
+          text: 'DevOps',
+          items: []
+        }
+      ],
+      '/blog/ai/': [
+        {
+          text: 'AI 工程',
+          items: [
+            { text: 'AI 应用工程师学习路径', link: '/blog/ai/2026-02-04-ai应用工程师学习路径' },
+            { text: 'LLM 应用开发', link: '/blog/ai/llm/' }
+          ]
+        }
+      ],
+      '/blog/resources/': [
+        {
+          text: '学习资源',
+          items: [
+            { text: '读书笔记', link: '/blog/resources/books/' }
+          ]
+        }
+      ],
+      '/blog/workflows/': [
+        {
+          text: '工作流',
+          items: [
+            { text: '生产力工具', link: '/blog/workflows/productivity/' }
           ]
         }
       ]

@@ -28,9 +28,5 @@ features:
     details: 提升开发效率的工具、框架和最佳实践推荐
 ---
 
-<style>
-:root {
-  --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe 30%, #41d1ff);
-}
-</style>
+<!-- Home Page -->
+

@@ -7,6 +7,8 @@ dist
 .vitepress/dist
 .DS_Store
 *.log
+.trae/
+.vscode/
 
 # 环境变量
 .env
